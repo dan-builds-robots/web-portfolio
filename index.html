@@ -57,7 +57,7 @@
 		}
 		
 		.adjacent {
-			float: left;
+			display:inline-block;
 			margin: 10px;
 		}
 		
@@ -156,6 +156,28 @@
 			font-size: 20px;
 		}
 		
+		.holder {
+			padding: 25px;
+			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+			width: 300px;
+			height: 230px;
+			display:inline-block;
+			border-radius: 15px;
+			text-align: center;
+			vertical-align: middle;
+			horizontal-align: center;
+			
+		}
+		
+		.space2 {
+			margin: 20px;
+			margin-top: 0px;
+		}
+		
+		.shadow {
+			
+		}
+		
 	</style>
 	
 </head>
@@ -187,7 +209,7 @@
 	
 	<div class="space" id="projects"></div>
 	<h1 class="subtitle">projects</h1>
-	<div class="center hor">
+	<div class="hor">
 		<div class="adjacent">
 			<iframe src="https://www.dlbcsj.org/" height="400" width="600"></iframe>
 			<br><br>
@@ -202,6 +224,38 @@
 		
 	</div>
 	
+	<div class="space" id="resume"></div>
+	
+	<div >
+		<h1 class="subtitle">resume</h1>
+		<div>
+			
+			<div class="holder space2">
+				<img src="https://cdn.worldvectorlogo.com/logos/google-icon.svg" width="100">
+				<p><b>Google CSSI</b></p>
+				<p><b>Computer Science Summer Institute</b></p>
+				<p>6-week, highly intensive immersion in web development.</p>
+			</div>
+			
+			
+			<div class="holder space2">
+				<img src="https://cdn.worldvectorlogo.com/logos/udemy-1.svg" width="100">
+				<p><b>The Complete Web Developer Course 2.0</b></p>
+				<p>comprehensive web dev Udemy course.</p>
+			</div>
+			
+			
+			<div class="holder space2">
+				<img src="https://cdn.worldvectorlogo.com/logos/udemy-1.svg" width="100">
+				<p><b>Automating The Boring Stuff</b></p>
+				<p>comprehensive udemy course on automating tasks in web browsers with python bots.</p>
+			</div>
+			
+		</div>
+		
+		
+	</div>
+	
 	<div class="space"></div>
 	
 	<div class="blue_bg white" id="contact">
@@ -212,7 +266,7 @@
 		<br>
 		
 		<div class="blue_bg contain full_width">
-			<div class="adjacent">
+			<div class="adjacent top shadow">
 			<h1 class="subtitle top" style="width: 500; margin: 0" >contact</h1>
 			</div>
 			<div class="adjacent">
@@ -241,10 +295,9 @@
 					<br>
 					-->
 					<select id="country" name="country">
-						<option value="usa">USA</option>
 						<option value="australia">Australia</option>
 						<option value="canada">Canada</option>
-						<option value="europe">Europe</option>
+						<option value="canada">Europe</option>
 						<option value="usa">USA</option>
 					</select>
 					<br>
